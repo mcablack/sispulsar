@@ -1,9 +1,5 @@
 <template>
-  <div :class="{'has-logo': showLogo}">
-    <sidebar-logo
-      v-if="showLogo"
-      :collapse="isCollapse"
-    />
+  <div>
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
@@ -33,14 +29,12 @@ import { AppModule } from '@/store/modules/app'
 import { PermissionModule } from '@/store/modules/permission'
 import { SettingsModule } from '@/store/modules/settings'
 import SidebarItem from './SidebarItem.vue'
-import SidebarLogo from './SidebarLogo.vue'
 import variables from '@/styles/_variables.scss'
 
 @Component({
   name: 'SideBar',
   components: {
-    SidebarItem,
-    SidebarLogo
+    SidebarItem
   }
 })
 export default class extends Vue {
@@ -50,10 +44,6 @@ export default class extends Vue {
 
   get routes() {
     return PermissionModule.routes
-  }
-
-  get showLogo() {
-    return SettingsModule.showSidebarLogo
   }
 
   get menuActiveTextColor() {

@@ -8,7 +8,7 @@ export interface ISettingsState {
   fixedHeader: boolean
   showSettings: boolean
   showTagsView: boolean
-  showSidebarLogo: boolean
+  //showSidebarLogo: boolean
   sidebarTextTheme: boolean
 }
 
@@ -18,7 +18,7 @@ class Settings extends VuexModule implements ISettingsState {
   public fixedHeader = defaultSettings.fixedHeader
   public showSettings = defaultSettings.showSettings
   public showTagsView = defaultSettings.showTagsView
-  public showSidebarLogo = defaultSettings.showSidebarLogo
+  //public showSidebarLogo = defaultSettings.showSidebarLogo
   public sidebarTextTheme = defaultSettings.sidebarTextTheme
 
   @Mutation
