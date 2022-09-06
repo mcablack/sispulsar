@@ -23,14 +23,14 @@ const steps = [
       position: 'left'
     }
   },
-  {
-    element: '#screenfull',
-    popover: {
-      title: 'Screenfull',
-      description: 'Set the page into fullscreen',
-      position: 'left'
-    }
-  },
+  // {
+  //   element: '#screenfull',
+  //   popover: {
+  //     title: 'Screenfull',
+  //     description: 'Set the page into fullscreen',
+  //     position: 'left'
+  //   }
+  // },
   {
     element: '#size-select',
     popover: {

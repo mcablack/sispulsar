@@ -1,7 +1,5 @@
 <template>
   <div class="dashboard-editor-container">
-    <github-corner class="github-corner" />
-
     <panel-group @handle-set-line-chart-data="handleSetLineChartData" />
 
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
@@ -76,7 +74,6 @@
 <script lang="ts">
 import 'echarts/theme/macarons.js' // Theme used in BarChart, LineChart, PieChart and RadarChart
 import { Component, Vue } from 'vue-property-decorator'
-import GithubCorner from '@/components/GithubCorner/index.vue'
 import BarChart from './components/BarChart.vue'
 import BoxCard from './components/BoxCard.vue'
 import LineChart, { ILineChartData } from './components/LineChart.vue'
@@ -108,7 +105,6 @@ const lineChartData: { [type: string]: ILineChartData } = {
 @Component({
   name: 'DashboardAdmin',
   components: {
-    GithubCorner,
     BarChart,
     BoxCard,
     LineChart,
