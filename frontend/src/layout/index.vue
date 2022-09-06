@@ -3,11 +3,6 @@
     :class="classObj"
     class="app-wrapper"
   >
-    <div
-      v-if="classObj.mobile && sidebar.opened"
-      class="drawer-bg"
-      @click="handleClickOutside"
-    />
     <sidebar class="sidebar-container" />
     <div
       class="main-container"
@@ -29,7 +24,6 @@ import { mixins } from 'vue-class-component'
 import { DeviceType, AppModule } from '@/store/modules/app'
 import { SettingsModule } from '@/store/modules/settings'
 import { AppMain, Navbar, Settings, Sidebar } from './components'
-import RightPanel from '@/components/RightPanel/index.vue'
 import ResizeMixin from './mixin/resize'
 
 @Component({
@@ -37,7 +31,6 @@ import ResizeMixin from './mixin/resize'
   components: {
     AppMain,
     Navbar,
-    RightPanel,
     Settings,
     Sidebar
   }
@@ -72,16 +65,6 @@ export default class extends mixins(ResizeMixin) {
   position: relative;
   height: 100%;
   width: 100%;
-}
-
-.drawer-bg {
-  background: #000;
-  opacity: 0.3;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  position: absolute;
-  z-index: 999;
 }
 
 .main-container {
