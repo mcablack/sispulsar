@@ -5,7 +5,7 @@ import store from '@/store'
 
 const hasPermission = (roles: string[], route: RouteConfig) => {
   if (route.meta && route.meta.roles) {
-    return roles.some(role => route.meta.roles.includes(role))
+    return roles.some(role => route?.meta?.roles.includes(role))
   } else {
     return true
   }
