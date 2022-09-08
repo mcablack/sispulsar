@@ -68,45 +68,45 @@ export const constantRoutes = [
 ]
 
 export const asyncRoutes = [
-  {
-    path: '/permission',
-    component: 'Layout',
-    redirect: '/permission/index',
-    meta: {
-      title: 'permission',
-      icon: 'lock',
-      roles: ['admin', 'editor'],
-      alwaysShow: true
-    },
-    children: [
-      {
-        path: 'page',
-        component: 'views/permission/page',
-        name: 'PagePermission',
-        meta: {
-          title: 'pagePermission',
-          roles: ['admin']
-        }
-      },
-      {
-        path: 'directive',
-        component: 'views/permission/directive',
-        name: 'DirectivePermission',
-        meta: {
-          title: 'directivePermission'
-        }
-      },
-      {
-        path: 'role',
-        component: 'views/permission/role',
-        name: 'RolePermission',
-        meta: {
-          title: 'rolePermission',
-          roles: ['admin']
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/permission',
+  //   component: 'Layout',
+  //   redirect: '/permission/index',
+  //   meta: {
+  //     title: 'permission',
+  //     icon: 'lock',
+  //     roles: ['admin', 'editor'],
+  //     alwaysShow: true
+  //   },
+  //   children: [
+  //     {
+  //       path: 'page',
+  //       component: 'views/permission/page',
+  //       name: 'PagePermission',
+  //       meta: {
+  //         title: 'pagePermission',
+  //         roles: ['admin']
+  //       }
+  //     },
+  //     {
+  //       path: 'directive',
+  //       component: 'views/permission/directive',
+  //       name: 'DirectivePermission',
+  //       meta: {
+  //         title: 'directivePermission'
+  //       }
+  //     },
+  //     {
+  //       path: 'role',
+  //       component: 'views/permission/role',
+  //       name: 'RolePermission',
+  //       meta: {
+  //         title: 'rolePermission',
+  //         roles: ['admin']
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: '/components',
     component: 'Layout',
@@ -200,36 +200,6 @@ export const asyncRoutes = [
         component: 'views/components-demo/draggable-kanban',
         name: 'DraggableKanbanDemo',
         meta: { title: 'draggableKanban' }
-      }
-    ]
-  },
-  {
-    path: '/error',
-    component: 'Layout',
-    redirect: 'noredirect',
-    name: 'ErrorPages',
-    meta: {
-      title: 'errorPages',
-      icon: '404'
-    },
-    children: [
-      {
-        path: '401',
-        component: 'views/error-page/401',
-        name: 'Page401',
-        meta: {
-          title: 'page401',
-          noCache: true
-        }
-      },
-      {
-        path: '404',
-        component: 'views/error-page/404',
-        name: 'Page404',
-        meta: {
-          title: 'page404',
-          noCache: true
-        }
       }
     ]
   },
