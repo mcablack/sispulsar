@@ -204,45 +204,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/charts',
-    component: 'Layout',
-    redirect: 'noredirect',
-    name: 'Charts',
-    meta: {
-      title: 'charts',
-      icon: 'chart'
-    },
-    children: [
-      {
-        path: 'bar-chart',
-        component: 'views/charts/bar-chart',
-        name: 'BarChartDemo',
-        meta: {
-          title: 'barChart',
-          noCache: true
-        }
-      },
-      {
-        path: 'line-chart',
-        component: 'views/charts/line-chart',
-        name: 'LineChartDemo',
-        meta: {
-          title: 'lineChart',
-          noCache: true
-        }
-      },
-      {
-        path: 'mixedchart',
-        component: 'views/charts/mixed-chart',
-        name: 'MixedChartDemo',
-        meta: {
-          title: 'mixedChart',
-          noCache: true
-        }
-      }
-    ]
-  },
-  {
     path: '/error',
     component: 'Layout',
     redirect: 'noredirect',
