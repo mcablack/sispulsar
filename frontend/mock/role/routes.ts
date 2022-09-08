@@ -516,22 +516,6 @@ export const asyncRoutes = [
     meta: { hidden: true }
   },
   {
-    path: '/theme',
-    component: 'Layout',
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'index',
-        component: 'views/theme/index',
-        name: 'Theme',
-        meta: {
-          title: 'theme',
-          icon: 'theme'
-        }
-      }
-    ]
-  },
-  {
     path: '/i18n',
     component: 'Layout',
     children: [
