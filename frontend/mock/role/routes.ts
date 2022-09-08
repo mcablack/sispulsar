@@ -495,27 +495,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/pdf',
-    component: 'Layout',
-    redirect: '/pdf/index',
-    children: [
-      {
-        path: 'index',
-        component: 'views/pdf/index',
-        name: 'PDF',
-        meta: {
-          title: 'pdf',
-          icon: 'pdf'
-        }
-      }
-    ]
-  },
-  {
-    path: '/pdf-download-example',
-    component: 'views/pdf/download',
-    meta: { hidden: true }
-  },
-  {
     path: '/i18n',
     component: 'Layout',
     children: [

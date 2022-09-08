@@ -325,27 +325,6 @@ export const asyncRoutes: RouteConfig[] = [
     ]
   },
   {
-    path: '/pdf',
-    component: Layout,
-    redirect: '/pdf/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import(/* webpackChunkName: "pdf" */ '@/views/pdf/index.vue'),
-        name: 'PDF',
-        meta: {
-          title: 'pdf',
-          icon: 'pdf'
-        }
-      }
-    ]
-  },
-  {
-    path: '/pdf-download-example',
-    component: () => import(/* webpackChunkName: "pdf-download-example" */ '@/views/pdf/download.vue'),
-    meta: { hidden: true }
-  },
-  {
     path: '/i18n',
     component: Layout,
     children: [
