@@ -256,22 +256,6 @@ export const asyncRoutes: RouteConfig[] = [
     ]
   },
   {
-    path: '/error-log',
-    component: Layout,
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'log',
-        component: () => import(/* webpackChunkName: "error-log" */ '@/views/error-log/index.vue'),
-        name: 'ErrorLog',
-        meta: {
-          title: 'errorLog',
-          icon: 'bug'
-        }
-      }
-    ]
-  },
-  {
     path: '/excel',
     component: Layout,
     redirect: '/excel/export-excel',
