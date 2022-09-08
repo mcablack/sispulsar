@@ -339,47 +339,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/example',
-    component: 'Layout',
-    redirect: '/example/list',
-    name: 'Example',
-    meta: {
-      title: 'example',
-      icon: 'example'
-    },
-    children: [
-      {
-        path: 'create',
-        component: 'views/example/create',
-        name: 'CreateArticle',
-        meta: {
-          title: 'createArticle',
-          icon: 'edit'
-        }
-      },
-      {
-        path: 'edit/:id(\\d+)',
-        component: 'views/example/edit',
-        name: 'EditArticle',
-        meta: {
-          title: 'editArticle',
-          noCache: true,
-          activeMenu: '/example/list',
-          hidden: true
-        }
-      },
-      {
-        path: 'list',
-        component: 'views/example/list',
-        name: 'ArticleList',
-        meta: {
-          title: 'articleList',
-          icon: 'list'
-        }
-      }
-    ]
-  },
-  {
     path: '/error',
     component: 'Layout',
     redirect: 'noredirect',
