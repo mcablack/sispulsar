@@ -446,24 +446,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/zip',
-    component: 'Layout',
-    redirect: '/zip/download',
-    meta: {
-      title: 'zip',
-      icon: 'zip',
-      alwaysShow: true
-    },
-    children: [
-      {
-        path: 'download',
-        component: 'views/zip/index',
-        name: 'ExportZip',
-        meta: { title: 'exportZip' }
-      }
-    ]
-  },
-  {
     path: '/i18n',
     component: 'Layout',
     children: [
