@@ -1,7 +1,6 @@
 /* tslint:disable */
 import './404'
 import './back-top'
-import './bug'
 import './chart'
 import './component'
 import './dashboard'
