@@ -410,42 +410,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/excel',
-    component: 'Layout',
-    redirect: '/excel/export-excel',
-    name: 'Excel',
-    meta: {
-      title: 'excel',
-      icon: 'excel'
-    },
-    children: [
-      {
-        path: 'export-excel',
-        component: 'views/excel/export-excel',
-        name: 'ExportExcel',
-        meta: { title: 'exportExcel' }
-      },
-      {
-        path: 'export-selected-excel',
-        component: 'views/excel/select-excell',
-        name: 'SelectExcel',
-        meta: { title: 'selectExcel' }
-      },
-      {
-        path: 'export-merge-header',
-        component: 'views/excel/merge-header',
-        name: 'MergeHeader',
-        meta: { title: 'mergeHeader' }
-      },
-      {
-        path: 'upload-excel',
-        component: 'views/excel/upload-excel',
-        name: 'UploadExcel',
-        meta: { title: 'uploadExcel' }
-      }
-    ]
-  },
-  {
     path: '/i18n',
     component: 'Layout',
     children: [
