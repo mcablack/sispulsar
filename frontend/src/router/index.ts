@@ -212,21 +212,6 @@ export const asyncRoutes: RouteConfig[] = [
     ]
   },
   {
-    path: '/tab',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import(/* webpackChunkName: "tab" */ '@/views/tab/index.vue'),
-        name: 'Tab',
-        meta: {
-          title: 'tab',
-          icon: 'tab'
-        }
-      }
-    ]
-  },
-  {
     path: '/error',
     component: Layout,
     redirect: 'noredirect',
