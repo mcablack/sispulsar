@@ -362,22 +362,6 @@ export const asyncRoutes: RouteConfig[] = [
     ]
   },
   {
-    path: '/clipboard',
-    component: Layout,
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'index',
-        component: () => import(/* webpackChunkName: "clipboard" */ '@/views/clipboard/index.vue'),
-        name: 'Clipboard',
-        meta: {
-          title: 'clipboard',
-          icon: 'clipboard'
-        }
-      }
-    ]
-  },
-  {
     path: '/i18n',
     component: Layout,
     children: [
@@ -391,13 +375,6 @@ export const asyncRoutes: RouteConfig[] = [
         }
       }
     ]
-  },
-  {
-    path: 'https://github.com/Armour/vue-typescript-admin-template',
-    meta: {
-      title: 'externalLink',
-      icon: 'link'
-    }
   },
   {
     path: '*',

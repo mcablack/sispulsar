@@ -108,22 +108,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/icon',
-    component: 'Layout',
-    children: [
-      {
-        path: 'index',
-        component: 'views/icons/index',
-        name: 'Icons',
-        meta: {
-          title: 'icons',
-          icon: 'icon',
-          noCache: true
-        }
-      }
-    ]
-  },
-  {
     path: '/components',
     component: 'Layout',
     redirect: 'noredirect',
@@ -548,22 +532,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/clipboard',
-    component: 'Layout',
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'index',
-        component: 'views/clipboard/index',
-        name: 'Clipboard',
-        meta: {
-          title: 'clipboard',
-          icon: 'clipboard'
-        }
-      }
-    ]
-  },
-  {
     path: '/i18n',
     component: 'Layout',
     children: [
@@ -577,13 +545,6 @@ export const asyncRoutes = [
         }
       }
     ]
-  },
-  {
-    path: 'https://github.com/Armour/vue-typescript-admin-template',
-    meta: {
-      title: 'externalLink',
-      icon: 'link'
-    }
   },
   {
     path: '*',
