@@ -170,7 +170,6 @@ export const asyncRoutes: RouteConfig[] = [
   componentsRouter,
   chartsRouter,
   nestedRouter,
-  tableRouter,
   {
     path: '/error',
     component: Layout,

@@ -303,42 +303,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/table',
-    component: 'Layout',
-    redirect: '/table/complex-table',
-    name: 'Table',
-    meta: {
-      title: 'table',
-      icon: 'table'
-    },
-    children: [
-      {
-        path: 'dynamic-table',
-        component: 'views/table/dynamic-table/index',
-        name: 'DynamicTable',
-        meta: { title: 'dynamicTable' }
-      },
-      {
-        path: 'draggable-table',
-        component: 'views/table/draggable-table',
-        name: 'DraggableTable',
-        meta: { title: 'draggableTable' }
-      },
-      {
-        path: 'inline-edit-table',
-        component: 'views/table/inline-edit-table',
-        name: 'InlineEditTable',
-        meta: { title: 'inlineEditTable' }
-      },
-      {
-        path: 'complex-table',
-        component: 'views/table/complex-table',
-        name: 'ComplexTable',
-        meta: { title: 'complexTable' }
-      }
-    ]
-  },
-  {
     path: '/error',
     component: 'Layout',
     redirect: 'noredirect',
